@@ -79,37 +79,38 @@ The project is organized as follows:
 
 This project demonstrates a structured approach to organizing, processing, and analyzing transmission tower images. By leveraging techniques such as EXIF metadata extraction, systematic file structuring, and threshold-based hotspot detection, a robust framework has been established. The project lays the groundwork for future automation and real-time monitoring enhancements.
 
+---
 
-##File Structure:
+##File Structure
 
-TransmissionTowerProject/                # Root project folder
-├── dataset/                             # Contains raw input images
-│   └── transformer/                     # Folder with transmission tower images
-│       ├── DJI_20250212114151_0035_V.jpg  # Example visible (RGB) image
-│       ├── DJI_20250212114151_0035_T.jpg  # Example thermal image
-│       └── ...                          # Other raw images (both V and T)
-│
-├── output/                              # Contains all processed files and organized output
-│   ├── date/                            # Date-based organization folder
-│   │   └── 2025-02-12/                  # Example date folder
-│   │       ├── V/                       # Visible images for that date
-│   │       └── T/                       # Thermal images for that date
-│   │
-│   ├── V_images/                        # All visible images copied here
-│   │   └── ...                          
-│   │
-│   ├── T_images/                        # All thermal images copied here
-│   │   └── ...
-│   │
-│   ├── GPS/                             # GPS-based organization (if available)
-│   │   └── 17.9735_76.4514/              # Folder named after the GPS coordinates
-│   │       ├── ...                     
-│   │
-│   ├── hotspots/                        # Contains annotated images with hotspots highlighted
-│   │   ├── V/                           # Annotated visible images
-│   │   └── T/                           # Annotated thermal images
-│   │
-│   └── metadata.csv                     # CSV file with extracted metadata for each image pair
-│
-├── README.md                            # Project documentation and instructions
-└── requirements.txt                     # List of required Python packages (e.g., opencv-python, Pillow, pandas, fpdf2)
+-TransmissionTowerProject/                # Root project folder
+-├── dataset/                             # Contains raw input images
+-│   └── transformer/                     # Folder with transmission tower images
+-│       ├── DJI_20250212114151_0035_V.jpg  # Example visible (RGB) image
+-│       ├── DJI_20250212114151_0035_T.jpg  # Example thermal image
+-│       └── ...                          # Other raw images (both V and T)
+-│
+-├── output/                              # Contains all processed files and organized output
+-│   ├── date/                            # Date-based organization folder
+-│   │   └── 2025-02-12/                  # Example date folder
+-│   │       ├── V/                       # Visible images for that date
+-│   │       └── T/                       # Thermal images for that date
+-│   │
+-│   ├── V_images/                        # All visible images copied here
+-│   │   └── ...                          
+-│   │
+-│   ├── T_images/                        # All thermal images copied here
+-│   │   └── ...
+-│   │
+-│   ├── GPS/                             # GPS-based organization (if available)
+-│   │   └── 17.9735_76.4514/              # Folder named after the GPS coordinates
+-│   │       ├── ...                     
+-│   │
+-│   ├── hotspots/                        # Contains annotated images with hotspots highlighted
+-│   │   ├── V/                           # Annotated visible images
+-│   │   └── T/                           # Annotated thermal images
+-│   │
+-│   └── metadata.csv                     # CSV file with extracted metadata for each image pair
+-│
+-├── README.md                            # Project documentation and instructions
+-└── requirements.txt                     # List of required Python packages (e.g., opencv-python, Pillow, pandas, fpdf2)
